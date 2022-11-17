@@ -1,0 +1,35 @@
+﻿@model MVC_11_17.Models.ManoTest
+
+
+
+<div><h1 class="text-secondary">@Model.Query</h1></div>
+<div><h1 class="text-secondary">@Model.Skaicius</h1></div>
+
+@for (int i = 0; i < Model.Skaicius; i++)
+{
+<strong>*</strong>
+}
+
+
+
+@*
+<div>@ViewBag.queryStringas</div>
+
+<div>Hello default</div>
+
+<div><h1 class="text-secondary">@Model</h1></div>
+<div>@ViewBag.queryIntas</div>
+    *@
+
+
+
+@* @@ViewBag.manoStringas
+    <p>
+        @ViewData["testtext"]
+    </p>
+    @TempData["tes2"]
+*@
+
+
+
+@*--------------------cia yra komentaras----------------------*@
