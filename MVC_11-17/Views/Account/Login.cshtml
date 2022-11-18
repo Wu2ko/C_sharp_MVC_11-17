@@ -1,0 +1,12 @@
+﻿@model MVC_11_17.Models.LoginViewModel
+
+
+<h1>Login page</h1>
+
+<form asp-controller="@typeof(AccountController).UrlName()" asp-action="@nameof(AccountController.Login)" method="post">
+    <input type="text" asp-for="@Model.Username" value="" />
+    <input type="text" asp-for="@Model.Password" value="" />
+    <button type="submit">Siusti</button>
+</form>
+
+@*kai keli inputs su asp- reikia ant contolerio uzdet taga pvz [HttpPost]

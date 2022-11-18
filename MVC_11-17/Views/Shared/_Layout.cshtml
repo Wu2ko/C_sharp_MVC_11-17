@@ -9,7 +9,30 @@
 </head>
 <body>
     <header>
-        
+        <nav>
+            <div class="btn-dark col-2 btn btn-primary nav-item text-black">
+                <a asp-controller="@typeof(AccountController).UrlName()"
+                   asp-action="@nameof(AccountController.Index)">'Account Index</a>
+            </div>
+            <div class="">
+                <a asp-controller="@typeof(AccountController).UrlName()"
+                   asp-action="@nameof(AccountController.AccountView)">'Account > Account View</a>
+            </div>
+            <div class="">
+                <a asp-controller="@typeof(AccountController).UrlName()"
+                   asp-action="@nameof(AccountController.Login)">'Account > Login</a>
+            </div>
+
+            <div class="btn-dark col-2 btn btn-primary nav-link text-white bg-dark">
+                <a asp-controller="@typeof(HomeController).UrlName()"
+                   asp-action="@nameof(HomeController.Index)">Home Index</a>
+                <div>
+                    <a asp-controller="@typeof(HomeController).UrlName()"
+                       asp-action="@nameof(HomeController.Privacy)">Home > Privacy</a>
+                </div>
+
+            </div>
+        </nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">

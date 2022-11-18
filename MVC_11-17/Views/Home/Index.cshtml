@@ -1,25 +1,35 @@
-﻿@model MVC_11_17.Models.ManoTest
+﻿@using MVC_11_17.Controllers
+@using MVC_11_17.Extensions
 
+@* @model MVC_11_17.Models.ManoTest *@
+<h1>Home Index</h1>
 
+<div>
+    <a href="/Account" class="btn btn-primary">Account</a>
+    </div>
+<div class="btn">
+    <a asp-controller="@typeof(AccountController).UrlName()"
+       asp-action="@nameof(AccountController.Index)">account link </a>
+</div>
+@*
+    <div><h1 class="text-secondary">@Model.Query</h1></div>
+    <div><h1 class="text-secondary">@Model.Skaicius</h1></div>
 
-<div><h1 class="text-secondary">@Model.Query</h1></div>
-<div><h1 class="text-secondary">@Model.Skaicius</h1></div>
-
-@for (int i = 0; i < Model.Skaicius; i++)
-{
-<strong>*</strong>
-}
-
+    @for (int i = 0; i < Model.Skaicius; i++)
+    {
+    <strong>*</strong>
+    }
+*@
 
 
 @*
-<div>@ViewBag.queryStringas</div>
+    <div>@ViewBag.queryStringas</div>
 
-<div>Hello default</div>
+    <div>Hello default</div>
 
-<div><h1 class="text-secondary">@Model</h1></div>
-<div>@ViewBag.queryIntas</div>
-    *@
+    <div><h1 class="text-secondary">@Model</h1></div>
+    <div>@ViewBag.queryIntas</div>
+*@
 
 
 

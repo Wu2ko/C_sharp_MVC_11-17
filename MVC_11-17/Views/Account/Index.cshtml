@@ -1,0 +1,15 @@
+﻿
+
+<h1>Account puslapis</h1>
+<a href="/" class="btn btn-primary">Home</a>
+
+<a href="/Account/AccountView" class="btn btn-primary">AccAcc</a>
+<p>Space it out</p>
+<div>
+    <a asp-controller="@typeof(AccountController).UrlName()"
+       asp-action="@nameof(AccountController.AccountView)">'Account View' page</a>
+</div>
+<div>
+    <a asp-controller="@typeof(HomeController).UrlName()"
+       asp-action="@nameof(HomeController.Index)">Back to Home Index</a>
+</div>
